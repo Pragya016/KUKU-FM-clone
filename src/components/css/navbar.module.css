@@ -1,0 +1,29 @@
+#nav {
+    background:#EE4130;
+    box-shadow: none;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#logo {
+    background: white;
+    color: #ee4130;
+    padding: 0 2px;
+    border-radius: 3px;
+    margin-left: 1px;
+}
+
+.navLink {
+    font-size: 1rem;
+    margin: auto 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#downloadIcon {
+    color: white;
+}

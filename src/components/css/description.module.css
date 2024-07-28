@@ -1,0 +1,26 @@
+.text {
+    width: 700px;
+    text-align: justify;
+    color: grey;
+    font-size: 0.9rem;
+    line-height: 2;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin: 0;
+}
+
+.truncated {
+    -webkit-line-clamp: 2;
+}
+
+.expanded {
+    -webkit-line-clamp: unset;
+}
+
+#expandBtn {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #EE4130;
+    cursor: pointer;
+}

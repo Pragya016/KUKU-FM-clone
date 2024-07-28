@@ -1,0 +1,32 @@
+#showContainer {
+    margin: 5px;
+}
+
+#showImage {
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#bottomContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#showTitle {
+    font-size: 1rem;
+    margin: 0;
+    width: 70%;
+    cursor: pointer;
+}
+
+#playIcon {
+    color: orange;
+    padding: 5px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    cursor: pointer;
+}

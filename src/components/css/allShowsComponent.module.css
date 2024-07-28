@@ -1,0 +1,35 @@
+#showsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+}
+
+#container {
+    width: 95%;
+    margin: auto;
+}
+
+#rootText {
+    text-decoration: none;
+    color: grey;
+}
+
+#arrowIcon {
+    font-size: 0.9rem;
+    color: grey;
+    position: relative;
+    bottom: 1px;
+}
+
+#categoryText {
+    color: #ee4130;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#title {
+    margin: 25px 0 10px 25px;
+}
