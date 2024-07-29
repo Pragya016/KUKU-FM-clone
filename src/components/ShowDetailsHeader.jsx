@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { appContext } from '../App'
 import TurnedInNotIcon from '@mui/icons-material/TurnedInNot';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
@@ -24,9 +24,6 @@ export default function ShowDetailsHeader() {
     const duration = `${hours > 0 ? hours : 0} h ${minutes > 0 ? minutes : 0} min`
     const listens = formatNumberToWords(show.n_listens);
 
-    useEffect(() => {
-        console.log(show);
-    }, [show]);
 
   return (
       <div id={styles.mainContainer}>
