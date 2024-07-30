@@ -21,6 +21,7 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='show/:title' element={<ShowDetailsPage />} />
           <Route path='all-shows' element={ <AllShowsPage/> } />
+          <Route path='not-found' element={ <ErrorPage/> } />
           <Route path='*' element={ <ErrorPage/> } />
         </Routes>
         </BrowserRouter>

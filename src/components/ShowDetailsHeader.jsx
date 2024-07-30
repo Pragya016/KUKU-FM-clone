@@ -4,6 +4,7 @@ import TurnedInNotIcon from '@mui/icons-material/TurnedInNot';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import styles from './css/showDetailsHeader.module.css';
 import { Button } from '@mui/material';
+import ErrorPage from './ErrorComponent';
 
 function formatNumberToWords(number) {
     if (number >= 100000) {
@@ -23,7 +24,6 @@ export default function ShowDetailsHeader() {
     const minutes = Math.floor((show.duration_s % 3600) / 60);
     const duration = `${hours > 0 ? hours : 0} h ${minutes > 0 ? minutes : 0} min`
     const listens = formatNumberToWords(show.n_listens);
-
 
   return (
       <div id={styles.mainContainer}>

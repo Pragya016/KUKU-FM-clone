@@ -4,6 +4,7 @@ import styles from './css/showDetails.module.css'
 import ShowDetailsHeader from './ShowDetailsHeader';
 import Description from './Description';
 import TabsPanel from './TabsPanel';
+import ErrorPage from './ErrorComponent';
 
 export default function ShowDetails() {
   const { show } = useContext(appContext);
@@ -18,7 +19,9 @@ export default function ShowDetails() {
     if (show) {
       setImage(show.other_images.landscape_image_sizes[360]);
     }
-    },[])
+  }, [])
+  
+  if(!show || show == {} ) return (<ErrorPage/>)
     
 
   return (

@@ -10,10 +10,10 @@ export default function Home() {
       {/* <Carousel/> */}
       <List id='285' showPlayButton={true} />
       <Categories/>
-      <List id='410' showPlayButton={false}/>
-      <List id='380' showPlayButton={false}/>
-      <List id='378' showPlayButton={false}/>
-      <List id='377' showPlayButton={false}/>
+      <List id='410' showPlayButton={false} listStyles={{marginTop:'40px'}}/>
+      <List id='380' showPlayButton={false} listStyles={{marginTop:'30px'}}/>
+      <List id='378' showPlayButton={false} listStyles={{marginTop:'60px'}}/>
+      <List id='377' showPlayButton={false} listStyles={{marginTop:'30px'}}/>
     </>
   )
 }

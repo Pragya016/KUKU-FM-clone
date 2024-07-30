@@ -6,7 +6,7 @@ import styles from './css/list.module.css';
 import Show from './Show';
 import { useNavigate } from 'react-router-dom';
 
-export default function List({ id, showPlayButton }) {
+export default function List({ id, showPlayButton, listStyles }) {
     const [listItems, setListItems] = useState({});
     const navigate = useNavigate();
 
@@ -25,7 +25,7 @@ export default function List({ id, showPlayButton }) {
     }
 
     return (
-        <div id={styles.container}>
+        <div id={styles.container} style={listStyles}>
             <div id={styles.topContainer} onClick={() => handleDisplayAllShows(id)}>
                 <span id={styles.listHeading}>{listItems.title}</span><span><ArrowForwardIosIcon fontSize='small' id={styles.arrowIcon} /></span>
             </div>

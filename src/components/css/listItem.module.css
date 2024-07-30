@@ -24,9 +24,11 @@
 }
 
 #playIcon {
-    color: orange;
+    color: #EE4130;
     padding: 5px;
-    border: 1px solid orange;
+    border: 1px solid #EE4130;
     border-radius: 50%;
     cursor: pointer;
+    height: 40px;
+    width: 40px;
 }
