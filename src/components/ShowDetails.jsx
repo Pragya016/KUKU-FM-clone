@@ -8,6 +8,7 @@ import ErrorPage from './ErrorComponent';
 
 export default function ShowDetails() {
   const { show } = useContext(appContext);
+  console.log(show)
   const [image, setImage] = useState('');
   useEffect(() => {
     // async function getShow() {

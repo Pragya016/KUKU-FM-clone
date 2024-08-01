@@ -12,11 +12,13 @@ export default function AllShowsComponent() {
   const query = new URLSearchParams(search);
   const title = query.get('title');
   const id = query.get('id');
+  let Uri;
 
   async function fetchData() {
     try {
       const { data } = await axios.get(`https://d31ntp24xvh0tq.cloudfront.net/api/v2.1/home/all/?preferred_langs=hindi&page=${page}&lang=english`);
       const filteredItems = data.items.filter(item => item.id == id);
+      Uri = filteredItems[0].uri;
       // const filteredShows = filteredItems.flatMap(item => item.shows);
       return filteredItems[0].shows;
     } catch (error) {
@@ -34,8 +36,10 @@ export default function AllShowsComponent() {
   // this useEffect will handle the scroll and as soon as user reaches the bottom...
   useEffect(() => {
     async function loadMoreData() {
-      const newData = await fetchData();
-      setShowData(prevData => [...prevData, ...newData]);
+      // const newData = await fetchData();
+      // setShowData(prevData => [...prevData, ...newData]);
+      const { data } = await axios.get(`https://d31ntp24xvh0tq.cloudfront.net/api/v2.1/home/all/?preferred_langs=hindi&page=${page}&lang=english/groups/trending-now/shows/?exclude_listened_shows=True"`);
+      console.log(data)
     }
 
     function handleScroll() {

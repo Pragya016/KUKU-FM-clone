@@ -7,8 +7,10 @@ export default function Home() {
 
   return (
     <>
-      {/* <Carousel/> */}
-      <List id='285' showPlayButton={true} />
+      <Carousel/>
+      {/* <List id='443' showPlayButton={true} /> */}
+      {/* <List id='1003' showPlayButton={true} /> */}
+      <List id='285' showPlayButton={true} listStyles={{marginTop:'40px'}}/>
       <Categories/>
       <List id='410' showPlayButton={false} listStyles={{marginTop:'40px'}}/>
       <List id='380' showPlayButton={false} listStyles={{marginTop:'30px'}}/>
